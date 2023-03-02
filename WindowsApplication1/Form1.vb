@@ -8,11 +8,13 @@
                 Dim userNameTxt
                 userNameTxt = System.Environment.GetEnvironmentVariable("USERNAME")
                 Dim p As New Process
-                MsgBox(myPath & "\main.exe /c " & " " & TextBox1.Text & " C:\Users\" & userNameTxt & "\WeatherLooker")
-                p.StartInfo.FileName = myPath & "\main.exe /c " & " C:\Users\" & userNameTxt & "\WeatherLooker"
+                Dim p2 As New Diagnostics.ProcessStartInfo("main.exe")
+                p2.WorkingDirectory = myPath
+                p2.Arguments = "/c " & TextBox1.Text & " " & "C:\Users\" & userNameTxt & "\Downloads"
+                'p.StartInfo.FileName = myPath & "\main.exe /c " & TextBox1.Text & "C:\Users\" & userNameTxt & "\Downloads"
+                p.StartInfo = p2
                 p.Start()
                 p.WaitForExit()
-                ' Shell("cmd.exe /c start C:\Users\徐胥桓\PycharmProjects\WeatherFinder\main.py /c taichung C:\Users\徐胥桓\OneDrive\文件")
                 MsgBox("寫入完成！", MsgBoxStyle.Information)
             Else
                 MsgBox("您尚未連線網際網路！", MsgBoxStyle.Critical)

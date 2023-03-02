@@ -18,3 +18,13 @@ C:\Users\徐胥桓\OneDrive\文件\Visual Studio 2008\Projects\WeatherLookup\Win
 C:\Users\徐胥桓\OneDrive\文件\Visual Studio 2008\Projects\WeatherLookup\WindowsApplication1\obj\Release\WindowsApplication1.Form1.resources
 C:\Users\徐胥桓\OneDrive\文件\Visual Studio 2008\Projects\WeatherLookup\WindowsApplication1\obj\Release\WindowsApplication1.Resources.resources
 C:\Users\徐胥桓\OneDrive\文件\Visual Studio 2008\Projects\WeatherLookup\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\A201\Downloads\WeatherOutputPy-main\WeatherOutputPy-main\WindowsApplication1\bin\Release\WindowsApplication1.exe
+C:\Users\A201\Downloads\WeatherOutputPy-main\WeatherOutputPy-main\WindowsApplication1\bin\Release\WindowsApplication1.pdb
+C:\Users\A201\Downloads\WeatherOutputPy-main\WeatherOutputPy-main\WindowsApplication1\bin\Release\WindowsApplication1.xml
+C:\Users\A201\Downloads\WeatherOutputPy-main\WeatherOutputPy-main\WindowsApplication1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\A201\Downloads\WeatherOutputPy-main\WeatherOutputPy-main\WindowsApplication1\obj\Release\WindowsApplication1.Form1.resources
+C:\Users\A201\Downloads\WeatherOutputPy-main\WeatherOutputPy-main\WindowsApplication1\obj\Release\WindowsApplication1.Resources.resources
+C:\Users\A201\Downloads\WeatherOutputPy-main\WeatherOutputPy-main\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\A201\Downloads\WeatherOutputPy-main\WeatherOutputPy-main\WindowsApplication1\obj\Release\WindowsApplication1.exe
+C:\Users\A201\Downloads\WeatherOutputPy-main\WeatherOutputPy-main\WindowsApplication1\obj\Release\WindowsApplication1.xml
+C:\Users\A201\Downloads\WeatherOutputPy-main\WeatherOutputPy-main\WindowsApplication1\obj\Release\WindowsApplication1.pdb
