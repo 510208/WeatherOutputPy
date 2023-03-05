@@ -90,7 +90,7 @@ Partial Class AboutBox1
         Me.LabelProductName.Name = "LabelProductName"
         Me.LabelProductName.Size = New System.Drawing.Size(257, 16)
         Me.LabelProductName.TabIndex = 0
-        Me.LabelProductName.Text = "產品名稱"
+        Me.LabelProductName.Text = "WeatherLookupPy"
         Me.LabelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'LabelVersion

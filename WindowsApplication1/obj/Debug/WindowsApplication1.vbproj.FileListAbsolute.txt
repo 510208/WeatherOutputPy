@@ -45,3 +45,4 @@ C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\dsb
 C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\hsb-DE\WeatherLookup.resources.dll
 C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\zh-HK\WeatherLookup.resources.dll
 C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\zh-TW\WeatherLookup.resources.dll
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\WeatherLookup.AboutBox1.resources

@@ -141,4 +141,8 @@ error_Proc:
     Private Sub pbxCloseBtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxCloseBtn.Click
         Me.Close()      '標題列關閉按鈕被按下=>關閉視窗
     End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        AboutBox1.Show()
+    End Sub
 End Class
