@@ -133,4 +133,12 @@ error_Proc:
             nOldWndTop = Me.Top
         End If
     End Sub
+
+    Private Sub pbxMinBtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxMinBtn.Click
+        Me.WindowState = FormWindowState.Minimized      '標題列縮小按鈕被按下=>縮小視窗
+    End Sub
+
+    Private Sub pbxCloseBtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles pbxCloseBtn.Click
+        Me.Close()      '標題列關閉按鈕被按下=>關閉視窗
+    End Sub
 End Class

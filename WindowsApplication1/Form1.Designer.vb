@@ -44,13 +44,17 @@ Partial Class MainForm
         Me.ToolStripProgressBar1 = New System.Windows.Forms.ToolStripProgressBar
         Me.SavePGBW = New System.Windows.Forms.SaveFileDialog
         Me.pnlTitleBar = New System.Windows.Forms.Panel
+        Me.pbxCloseBtn = New System.Windows.Forms.Button
+        Me.pbxMinBtn = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
+        Me.pnlTitleBar.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
         '
         resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Label1.Name = "Label1"
         '
         'TextBox1
@@ -87,6 +91,7 @@ Partial Class MainForm
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.ProgressBar1)
         Me.GroupBox1.Controls.Add(Me.weatherInfoLbl)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -162,7 +167,22 @@ Partial Class MainForm
         'pnlTitleBar
         '
         resources.ApplyResources(Me.pnlTitleBar, "pnlTitleBar")
+        Me.pnlTitleBar.Controls.Add(Me.pbxMinBtn)
+        Me.pnlTitleBar.Controls.Add(Me.pbxCloseBtn)
         Me.pnlTitleBar.Name = "pnlTitleBar"
+        '
+        'pbxCloseBtn
+        '
+        Me.pbxCloseBtn.ForeColor = System.Drawing.Color.Red
+        resources.ApplyResources(Me.pbxCloseBtn, "pbxCloseBtn")
+        Me.pbxCloseBtn.Name = "pbxCloseBtn"
+        Me.pbxCloseBtn.UseVisualStyleBackColor = True
+        '
+        'pbxMinBtn
+        '
+        resources.ApplyResources(Me.pbxMinBtn, "pbxMinBtn")
+        Me.pbxMinBtn.Name = "pbxMinBtn"
+        Me.pbxMinBtn.UseVisualStyleBackColor = True
         '
         'MainForm
         '
@@ -182,6 +202,7 @@ Partial Class MainForm
         Me.GroupBox1.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
+        Me.pnlTitleBar.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -206,5 +227,7 @@ Partial Class MainForm
     Friend WithEvents ToolStripProgressBar1 As System.Windows.Forms.ToolStripProgressBar
     Friend WithEvents SavePGBW As System.Windows.Forms.SaveFileDialog
     Friend WithEvents pnlTitleBar As System.Windows.Forms.Panel
+    Friend WithEvents pbxMinBtn As System.Windows.Forms.Button
+    Friend WithEvents pbxCloseBtn As System.Windows.Forms.Button
 
 End Class
