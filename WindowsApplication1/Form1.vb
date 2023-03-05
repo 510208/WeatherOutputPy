@@ -1,15 +1,25 @@
-﻿Public Class Form1
+﻿Imports System.IO
+
+Public Class MainForm
+    Dim pgbwPath As String
+    Dim weatherInfo(9)
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim myPath As String
+        myPath = Application.StartupPath
+        Dim userNameTxt
+        userNameTxt = System.Environment.GetEnvironmentVariable("USERNAME")
         If TextBox1.Text <> "" Then
             If My.Computer.Network.IsAvailable = True Then
-                Dim myPath As String
-                myPath = Application.StartupPath
-                Dim userNameTxt
-                userNameTxt = System.Environment.GetEnvironmentVariable("USERNAME")
+                On Error Resume Next
+                'SavePGBW.ShowDialog()
+                Dim weatherFilePath As String
+                'weatherFilePath = SavePGBW.FileName
                 Dim p As New Process
                 Dim p2 As New Diagnostics.ProcessStartInfo("main.exe")
                 p2.WorkingDirectory = myPath
+                'p2.Arguments = "/c " & TextBox1.Text & " " & weatherFilePath
+                'MsgBox("/c " & TextBox1.Text & " " & weatherFilePath)
                 p2.Arguments = "/c " & TextBox1.Text & " " & "C:\Users\" & userNameTxt & "\Downloads"
                 'p.StartInfo.FileName = myPath & "\main.exe /c " & TextBox1.Text & "C:\Users\" & userNameTxt & "\Downloads"
                 p.StartInfo = p2
@@ -18,9 +28,89 @@
                 MsgBox("寫入完成！", MsgBoxStyle.Information)
             Else
                 MsgBox("您尚未連線網際網路！", MsgBoxStyle.Critical)
+                Exit Sub
             End If
         Else
             MsgBox("請輸入要查詢的城市名稱", MsgBoxStyle.Critical)
+            Exit Sub
+        End If
+        MsgBox("檔案預設儲存於使用者的下載資料夾下，可自行移動", MsgBoxStyle.Information)
+        pgbwPath = "C:\Users\" & userNameTxt & "\Downloads\Output.pgbWeather"
+        pgbwPathShow.Text = "路徑：" & pgbwPath
+        On Error GoTo error_Proc
+        Dim SW As New StreamReader(pgbwPath, System.Text.Encoding.Default)
+        Dim temp As String
+        Dim readProc As Long = 0
+        While True
+            temp = SW.ReadLine ' 一次讀取一行
+            If temp Is Nothing Or temp = "" Then Exit While '讀取不到或讀出空字串就結束
+            weatherInfo(readProc) = temp
+            readProc = readProc + 1
+            ProgressBar1.Value = readProc
+            ToolStripProgressBar1.Value = readProc
+        End While
+        weatherInfoSel.Enabled = True
+        Exit Sub
+error_Proc:
+        If pgbwPath = "" Then
+            Exit Sub
+        Else
+            MsgBox("檔案讀取錯誤！" & vbNewLine & "請檢查檔案狀態與軟體狀態，確認檔案讀取狀態", vbCritical)
         End If
     End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        OpenPGBW.ShowDialog()
+        pgbwPath = OpenPGBW.FileName
+        pgbwPathShow.Text = "路徑：" & pgbwPath
+        On Error GoTo error_Proc
+        Dim SW As New StreamReader(pgbwPath, System.Text.Encoding.Default)
+        Dim temp As String
+        Dim readProc As Long = 0
+        While True
+            temp = SW.ReadLine ' 一次讀取一行
+            If temp Is Nothing Or temp = "" Then Exit While '讀取不到或讀出空字串就結束
+            weatherInfo(readProc) = temp
+            readProc = readProc + 1
+            ProgressBar1.Value = readProc
+            ToolStripProgressBar1.Value = readProc
+        End While
+        weatherInfoSel.Enabled = True
+        Exit Sub
+error_Proc:
+        If pgbwPath = "" Then
+            Exit Sub
+        Else
+            MsgBox("檔案讀取錯誤！" & vbNewLine & "請檢查檔案狀態與軟體狀態，確認檔案讀取狀態", vbCritical)
+        End If
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Shell("explorer https://github.com/510208/WeatherOutputPy")
+    End Sub
+
+    Private Sub weatherInfoSel_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles weatherInfoSel.SelectedIndexChanged
+        Dim wtLbl As Label = weatherInfoLbl
+        wtLbl.Text = weatherInfo(weatherInfoSel.SelectedIndex)
+        If weatherInfoSel.SelectedIndex > 1 And weatherInfoSel.SelectedIndex < 6 Then
+            wtLbl.Text = wtLbl.Text & "℃"
+        End If
+        If weatherInfoSel.SelectedIndex = 6 Or weatherInfoSel.SelectedIndex = 9 Then
+            wtLbl.Text = wtLbl.Text & "%"
+        End If
+        If weatherInfoSel.SelectedIndex = 7 Then
+            wtLbl.Text = wtLbl.Text & "m/s"
+        End If
+        If weatherInfoSel.SelectedIndex = 8 Then
+            wtLbl.Text = wtLbl.Text & "°"
+        End If
+    End Sub
+
+    Function cToF(ByVal C As Long)
+        cToF = 9 / 5 * Val(C) + 32
+    End Function
+
+    Function cToK(ByVal C As Long)
+        cToK = Val(C) + 273
+    End Function
 End Class
