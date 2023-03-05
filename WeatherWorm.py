@@ -79,7 +79,7 @@ import requests
 # API金鑰：89007f448fb36323ca0884a10d982594
 
 def weatherPrint(城市):
-    API密鑰 = "89007f448fb36323ca0884a10d982594"
+    API密鑰 = "請輸入你的API密鑰"
     url = f'https://api.openweathermap.org/data/2.5/weather?q={城市}&appid={API密鑰}&lang=zh_tw'
     天氣資料 = requests.get(url)
     print("請求的地點為：" + 城市)
