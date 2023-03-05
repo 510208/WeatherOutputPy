@@ -33,3 +33,15 @@ C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\Wea
 C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\WeatherLookup.exe
 C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\WeatherLookup.xml
 C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\WeatherLookup.pdb
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\bin\Debug\dsb-DE\WeatherLookup.resources.dll
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\bin\Debug\hsb-DE\WeatherLookup.resources.dll
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\bin\Debug\zh-HK\WeatherLookup.resources.dll
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\bin\Debug\zh-TW\WeatherLookup.resources.dll
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\WeatherLookup.MainForm.dsb-DE.resources
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\WeatherLookup.MainForm.hsb-DE.resources
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\WeatherLookup.MainForm.zh-HK.resources
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\WeatherLookup.MainForm.zh-TW.resources
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\dsb-DE\WeatherLookup.resources.dll
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\hsb-DE\WeatherLookup.resources.dll
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\zh-HK\WeatherLookup.resources.dll
+C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\zh-TW\WeatherLookup.resources.dll
