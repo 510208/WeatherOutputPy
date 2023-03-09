@@ -46,3 +46,20 @@ C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\hsb
 C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\zh-HK\WeatherLookup.resources.dll
 C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\zh-TW\WeatherLookup.resources.dll
 C:\Users\acer\Documents\GitHub\WeatherOutputPy\WindowsApplication1\obj\Debug\WeatherLookup.AboutBox1.resources
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\WeatherLookup.exe
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\WeatherLookup.xml
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\WeatherLookup.pdb
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\WeatherLookup.AboutBox1.resources
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\WeatherLookup.MainForm.resources
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\WeatherLookup.Resources.resources
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\WeatherLookup.SplashScreen1.resources
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\bin\Debug\WeatherLookup.exe.manifest
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\bin\Debug\WeatherLookup.application
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\bin\Debug\WeatherLookup.exe
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\bin\Debug\WeatherLookup.pdb
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\bin\Debug\WeatherLookup.xml
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\WeatherLookup.TrustInfo.xml
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\WeatherLookup.exe.manifest
+C:\Users\A201\Downloads\WeatherOutputPy-main (1)\WeatherOutputPy-main\WindowsApplication1\obj\Debug\WeatherLookup.application
