@@ -111,7 +111,7 @@ def weatherPrint(城市):
 
 def weatherWriteTxt(城市,檔案 = "weatherOutput.txt"):
     f = open(檔案,"w+")
-    API密鑰 = "89007f448fb36323ca0884a10d982594"
+    API密鑰 = "請輸入你的API密鑰"
     url = f'https://api.openweathermap.org/data/2.5/weather?q={城市}&appid={API密鑰}&lang=zh_tw'
     天氣資料 = requests.get(url)
     # try:
@@ -150,7 +150,7 @@ def weatherWriteTxt(城市,檔案 = "weatherOutput.txt"):
 
 def weatherWriteFormat(城市,檔案 = "weatherOutput.pgbWeather"):
     f = open(檔案,"w+")
-    API密鑰 = "89007f448fb36323ca0884a10d982594"
+    API密鑰 = "請輸入你的API密鑰"
     url = f'https://api.openweathermap.org/data/2.5/weather?q={城市}&appid={API密鑰}&lang=zh_tw'
     天氣資料 = requests.get(url)
     # try:
